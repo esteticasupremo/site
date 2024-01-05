@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Supremo Estética Automotiva</title>
+    <meta name="description" content="Estética Automotiva">
+
+    <!-- Tags Open Graph -->
+    <meta property="og:title" content="Supremo Estética Automotiva">
+    <meta property="og:description" content="Estética Automotiva">
+    <meta property="og:image" content="img/logo.jpg">
+    <meta property="og:url" content="https://">
+    
+    <!-- Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/all.css">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="jquery.animateNumber.js"></script>
+</head>
+<body>
+
+      <div class="main-container">
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="sidebar" id="sidebar-nav">
+              <div class="sidebar-content">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> Início
+                </a>
+                <a href="biografia.html">
+                    <i class="far fa-user"></i> Biografia
+                </a>
+                <a href="servicos.html">
+                    <i class="fas fa-wrench"></i> Serviços
+                </a>
+                <a href="portfolio.html">
+                    <i class="far fa-images"></i> Portfólio
+                </a>
+                <a href="promocao.html">
+                    <i class="fas fa-tags"></i> Promoções
+                </a>
+                <a href="agendamento.html" class="active">
+                    <i class="far fa-calendar-alt"></i> Agendamento
+                </a>
+                <div class="close-menu-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+              </div>
+          </div>
+    
+
+          <div class="container-1">
+              <h2 class="presentation-title1">Supremo Estética Automotiva</h2>
+              <div class="social-icons-1">
+                <!-- Social icons will remain here -->
+              </div>
+          </div>
+      </div>
+
+      <div class="container-2">
+     
+        <!-- Banner --> 
+        <div class="banner"> 
+            <a href="index.html"> 
+              <img src="img/banner.jpg" alt="Banner Image" class="banner-image animate__animated animate__slideInDown"> 
+            </a> 
+            <div class="overlay"></div>
+        </div>
+      </div>
+
+      <div class="container-formulary">
+        <div class="form-container">
+          <h3 class="title-form">Para agendar um serviço, preencha o formulário!</h3>
+          <br><br>
+          <form id="encomendas-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+      
+            <label for="numero_de_celular">Número de celular:</label>
+            <input type="text" id="numero_de_celular" name="numero_de_celular" required><br><br>
+      
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br><br>
+      
+            <label for="data_pedido">Data da solicitação:</label>
+            <input type="date" id="data_pedido" name="data_pedido" required><br><br>
+            <br>
+      
+            <label for="produtos">Selecione os serviços:</label>
+            <select id="produtos" name="produtos" required>
+              <option value="">Selecionar</option>
+
+              <option value="Promoção da semana" data-price="450">Promoção da semana R$ 450,00</option>
+              <option value="Ducha - Carro pequeno" data-price="25">Ducha - Carro pequeno R$ 30,00</option>
+              <option value="Ducha - Caminhoneta/Caminhonete" data-price="70">Ducha - Caminhoneta/Caminhonete R$ 70,00</option>
+              <option value="Ducha - SUV" data-price="40">Ducha - SUV R$ 40,00</option>
+              <option value="Geral comum - Carro pequeno" data-price="50,00">Geral comum - Carro pequeno R$ 60,00</option>
+              <option value="Geral com cera - Carro pequeno" data-price="70">Geral com cera - Carro pequeno R$ 80,00</option>
+              <option value="Geral comum - SUV pequeno" data-price="60">Geral comum - SUV pequeno R$ 70,00</option>
+              <option value="Geral com cera - SUV pequeno" data-price="80">Geral com cera - SUV pequeno R$ 100,00</option>
+              <option value="Limpeza comum - Moto" data-price="50">Limpeza comum - Moto R$ 50,00</option>
+              <option value="Limpeza detalhada - Moto" data-price="180">Limpeza detalhada - Moto (condicionamento de plásticos + aplicação de verniz de motor) R$ 180,00</option>
+              <option value="Geral comum - Caminhoneta/Caminhonete ou SUV grande" data-price="70">Geral comum - Caminhoneta/Caminhonete ou SUV grande R$ 100,00</option>
+              <option value="Geral com cera - Caminhoneta/Caminhonete ou SUV grande" data-price="100">Geral com cera - Caminhoneta/Caminhonete ou SUV grande R$ 150,00</option>
+              <option value="Tratamento dos plásticos e limpeza das canaletas dos vidros" data-price="80">Tratamento dos plásticos e limpeza das canaletas dos vidros R$ 80,00</option>
+              <option value="Higienização e tratamento interno" data-price="380">Higienização e tratamento interno R$ 380,00</option>
+              <option value="Higienização do ar-condicionado" data-price="120">Higienização do ar-condicionado R$ 120,00</option>
+              <option value="Limpeza e tratamento do motor" data-price="120">Limpeza e tratamento do motor R$ 120,00</option>
+              <option value="Polimento de farol e vitrificação" data-price="150">Polimento de farol e vitrificação R$ 150,00</option>
+              <option value="Polimento comercial" data-price="350">Polimento comercial - A partir de R$ 350,00</option>
+              <option value="Polimento técnico" data-price="500">Polimento técnico - A partir de 500,00</option>
+            </select>
+
+          </form>
+
+          <div class="carrinho-section">
+            <div id="carrinho" class="carrinho">
+              <h3>Serviços selecionados</h3>
+              <ul id="itens-carrinho"></ul>
+              <p id="total-carrinho">Total: R$ 0,00</p>
+              <input type="hidden" id="valor-total" name="valor-total">
+            </div>
+      
+            <div class="encomendar-section">
+              <button id="encomendar" class="green-button">Agendar Serviço</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="container-8 animate-on-scroll">
+            <div class="site-name">
+                <h2>Supremo Estética Automotiva</h2>
+            </div>
+              
+            <div class="site-credit">
+                <p>Desenvolved by <a href="https://iodsm.github.io/Ielris-Marques_Developer/" target="_blank">Ielris Marques</a></p>
+            </div>
+            
+              
+            <div class="social-icons">
+                <a href="https://www.instagram.com/marciaoliveira_fotografia/" target="_blank" rel="noopener">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5531992969244&text=Olá,%20Marcia Oliveira!%20Vim através do site,%20 e gostaria%20de%20mais%20informações." target="_blank" rel="noopener">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:marciaoliveira.revenda@gmail.com?subject=ORÇAMENTO/SITE&body=Olá%2C%20Marcia Oiveira!%20Gostaria%20de%20fazer%20um%20orçamento. (Descreva sua ideia de ensaio aqui)">
+                  <i class="far fa-envelope"></i>
+                </a>
+                <a href="https://goo.gl/maps/edCmHAqEZhcDMaGq8" target="_blank" rel="noopener">
+                  <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+        </div> 
+        
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<html>
